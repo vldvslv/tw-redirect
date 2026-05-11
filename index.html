@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trader Wallet — Smart Portfolio Tracker</title>
-  <meta name="description" content="Trader Wallet is your secure multi-chain wallet for tracking real-time prices and managing your portfolio in one app. Free and easy to use.">
+  <meta name="description" content="Trader Wallet is your secure multi-chain wallet for tracking real-time prices and managing your portfolio in one app.">
   <meta property="og:title" content="Trader Wallet">
-  <meta property="og:description" content="Smart Portfolio Tracker. Multi-network. Real-time. Free.">
+  <meta property="og:description" content="Smart Portfolio Tracker. All-in-one finance app.">
   <meta property="og:type" content="website">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,13 +21,13 @@
       padding: 20px;
     }
     .container {
-      max-width: 480px;
+      max-width: 420px;
       text-align: center;
     }
     .logo {
-      font-size: 2.8em;
+      font-size: 2.4em;
       font-weight: bold;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       background: linear-gradient(135deg, #00d4aa, #00aaff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -35,54 +35,26 @@
     }
     .tagline {
       color: #aaa;
-      font-size: 1.05em;
+      font-size: 1em;
       margin-bottom: 32px;
       line-height: 1.5;
-    }
-    .features {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-bottom: 36px;
-      flex-wrap: wrap;
-    }
-    .feature {
-      color: #888;
-      font-size: 0.9em;
-    }
-    .feature strong {
-      display: block;
-      color: #00d4aa;
-      font-size: 1.4em;
-      margin-bottom: 4px;
     }
     .button {
       display: inline-block;
       background: linear-gradient(135deg, #00d4aa, #00aaff);
       color: black;
-      padding: 18px 40px;
-      border-radius: 14px;
+      padding: 16px 32px;
+      border-radius: 12px;
       text-decoration: none;
-      font-weight: 700;
-      font-size: 1.1em;
+      font-weight: 600;
+      font-size: 1.05em;
       transition: transform 0.2s;
-      margin-bottom: 20px;
     }
     .button:hover { transform: translateY(-2px); }
-    .description {
-      margin-top: 32px;
-      padding: 20px;
-      background: rgba(255,255,255,0.03);
-      border-radius: 12px;
-      color: #999;
-      font-size: 0.95em;
-      line-height: 1.6;
-      text-align: left;
-    }
-    .description h2 {
-      color: white;
-      font-size: 1.1em;
-      margin-bottom: 12px;
+    .loader {
+      margin-top: 24px;
+      color: #666;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -90,19 +62,13 @@
   <div class="container">
     <div class="logo">Trader Wallet</div>
     <div class="tagline">Smart Portfolio Tracker.<br>Multi-network. Real-time. Free.</div>
-    
-    <div class="features">
-      <div class="feature"><strong>10+</strong>Networks</div>
-      <div class="feature"><strong>1000+</strong>Assets</div>
-      <div class="feature"><strong>24</strong>Languages</div>
-    </div>
-    
-    <a class="button" href="https://trader-wallet.com">Get the App</a>
-    
-    <div class="description">
-      <h2>About Trader Wallet</h2>
-      Track your portfolio across multiple networks in one secure app. Manage assets, monitor real-time prices, and access advanced features with a clean, intuitive interface. Free to download and easy to use.
-    </div>
+    <a class="button" href="https://trader-wallet.com">Open Trader Wallet</a>
+    <div class="loader">Redirecting automatically...</div>
   </div>
+  <script>
+    setTimeout(function() {
+      window.location.replace("https://trader-wallet.com");
+    }, 800);
+  </script>
 </body>
 </html>
