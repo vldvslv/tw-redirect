@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trader Wallet — Smart Portfolio Tracker</title>
+  <meta name="description" content="Trader Wallet is your secure multi-chain wallet for tracking real-time prices and managing your portfolio in one app.">
+  <meta property="og:title" content="Trader Wallet">
+  <meta property="og:description" content="Smart Portfolio Tracker. All-in-one finance app.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://trader-wallet.com/og-image.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 420px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2.4em;
+      font-weight: bold;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #00d4aa, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tagline {
+      color: #aaa;
+      font-size: 1em;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, #00d4aa, #00aaff);
+      color: black;
+      padding: 16px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05em;
+      transition: transform 0.2s;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .loader {
+      margin-top: 24px;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Trader Wallet</div>
+    <div class="tagline">Smart Portfolio Tracker.<br>Multi-network. Real-time. Free.</div>
+    <a class="button" href="https://play.google.com/store/apps/details?id=com.svpdev.traderwallet">Open in Google Play</a>
+    <div class="loader">Redirecting automatically...</div>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.replace("https://play.google.com/store/apps/details?id=com.svpdev.traderwallet");
+    }, 800);
+  </script>
+</body>
+</html>
